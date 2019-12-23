@@ -3,6 +3,6 @@ year_eng = ("January", "February", "March", "April", "May", "June", "July", "Aug
 print("Введите порядковый номер любого месяца: ")
 x = input()
 def logic_calendar(y):
-    y = x - 1
+    y = int(x) - 1
     return y
-print(year_rus(y))
+print("Порядковый месяц " + str(x) + " это " + (year_rus[logic_calendar(x)]) + " по Аннглийски это " + (year_eng[logic_calendar(x)]))
